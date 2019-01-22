@@ -12,11 +12,9 @@ groupadd --system ggc_group
 
 #get dependency checker
 git clone https://github.com/aws-samples/aws-greengrass-samples.git
-git clone https://github.com/pixierepo/aws_gg_pixie_setup.git
 
-cd aws_gg_pixie_setup
 
-#Unpack Certs
+#Unpack Certs still need to download the GG group keys
 tar -xzvf greengrass-armv7l-1.7.0.tar.gz -C /
 cd /greengrass/certs
 wget -O root.ca.pem https://www.amazontrust.com/repository/AmazonRootCA1.pem
