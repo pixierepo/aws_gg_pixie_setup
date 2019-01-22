@@ -12,7 +12,9 @@ groupadd --system ggc_group
 
 #get dependency checker
 git clone https://github.com/aws-samples/aws-greengrass-samples.git
-git clone 
+git clone https://github.com/pixierepo/aws_gg_pixie_setup.git
+
+cd aws_gg_pixie_setup
 
 #Unpack Certs
 tar -xzvf greengrass-armv7l-1.7.0.tar.gz -C /
