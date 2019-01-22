@@ -4,7 +4,7 @@
 pacman -Syu --noconfirm
 
 #install
-pacman -S --noconfirm base-devel git python-pip python2-pip wget socat
+pacman -S --noconfirm base-devel python-pip python2-pip wget socat
 
 #create gg user and group
 useradd --system ggc_user
