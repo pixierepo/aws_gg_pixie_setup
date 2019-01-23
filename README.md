@@ -44,4 +44,4 @@ Execute:
 sudo ./greengrassd start
 ```
 
-You should now see in the IoT Console a new connexion. 
+In your IoT Console Deploy the group and select Automatic Detection. Once the deployment is successful you should see a new connection in the Monitor Tab.  
