@@ -20,7 +20,15 @@ The script is located inside:
 aws-greengrass-samples/greengrass-dependency-checker-GGCv1.7.0
 ```
 
-After you have confirmed that all the dependencies are installed you have to create a Greengrass group in the AWS IoT console and download the key to the PixieBoard.
+After you have confirmed that all the dependencies are installed you have unzip the folder greengrass-armv7l-1.7.0.tar.gz with:
+```
+sudo tar -xzvf greengrass-armv7l-1.7.0.tar.gz -C /
+cd /greengrass/certs
+wget -O root.ca.pem https://www.amazontrust.com/repository/AmazonRootCA1.pem
+```
+
+Then create a Greengrass group in the AWS IoT console and download the key to the PixieBoard.
+
 Once you have the group keys in the PixieBoard you can execute:
 ```
 sudo tar -xzvf hash-setup.tar.gz -C /greengrass
