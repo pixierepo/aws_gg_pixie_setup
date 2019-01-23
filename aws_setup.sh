@@ -14,11 +14,6 @@ groupadd --system ggc_group
 git clone https://github.com/aws-samples/aws-greengrass-samples.git
 
 
-#Unpack Certs still need to download the GG group keys
-tar -xzvf greengrass-armv7l-1.7.0.tar.gz -C /
-cd /greengrass/certs
-wget -O root.ca.pem https://www.amazontrust.com/repository/AmazonRootCA1.pem
-
 #add ggc_user to modem user uucp
 usermod -a -G uucp ggc_user
 
